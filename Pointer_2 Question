@@ -1,0 +1,41 @@
+ int arr[] = {11, 12, 13, 14, 15};
+    cout << *(arr) << " " << *(arr + 3);
+
+    int arr[] = {11, 21, 31, 41};
+    int *ptr = arr++;
+    cout << *ptr << endl;
+
+     char ch = 'a';
+    char* ptr = &ch;
+    ch++;
+    cout << *ptr << endl;
+
+
+    char arr[] = "abcde";
+    char *p = &arr[0];
+    cout << p << endl;
+
+    char arr[] = "abcde";
+    char *p = &arr[0];
+    p++;
+    cout << p << endl;   
+
+    char str[]= "babbar";
+    char *p = str;
+    cout << str[0] << " " << p[0] << endl;
+
+
+    void update(int *p){
+        *p = (*p)  *  2;
+    }
+
+    int main(){
+        int i = 10;
+        update(&i);
+        cout << i << endl;
+    }
+
+
+    void fun(int arr[]) {
+        cout << arr[0] << " ";
+    }
